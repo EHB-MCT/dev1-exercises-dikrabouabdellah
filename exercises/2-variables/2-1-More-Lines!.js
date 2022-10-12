@@ -9,6 +9,7 @@ let width = context.canvas.width;
 let height = context.canvas.height;
 
 let margin = 50;
+let spacing = 100;
 
 drawLines();
 
@@ -16,52 +17,52 @@ function drawLines() {
 
     context.lineWidth = "5"
     context.beginPath();
-    context.moveTo(margin,margin);
-    context.lineTo(width - margin, margin);
+    context.moveTo(margin,spacing);
+    context.lineTo(width - margin, spacing);
     context.stroke();
 
     context.beginPath();
-    context.moveTo(width - margin, margin);
-    context.lineTo(margin, margin + 2 * margin);
+    context.moveTo(width - margin, spacing);
+    context.lineTo(margin, spacing * 2);
     context.stroke();
 
     context.beginPath();
-    context.moveTo(margin, margin + 2 * margin);
-    context.lineTo(width - margin, margin + 2 * margin);
+    context.moveTo(margin, spacing * 2);
+    context.lineTo(width - margin, spacing * 2);
     context.stroke();
 
     context.beginPath();
-    context.moveTo(width - margin, margin + 2 * margin);
-    context.lineTo(margin, margin + 4 * margin);
+    context.moveTo(width - margin, spacing * 2);
+    context.lineTo(margin, spacing * 3);
     context.stroke();
 
     context.beginPath();
-    context.moveTo(margin, margin + 4 * margin);
-    context.lineTo(width - margin, margin + 4 * margin);
+    context.moveTo(margin, spacing * 3);
+    context.lineTo(width - margin, spacing * 3);
     context.stroke();
 
     context.beginPath();
-    context.moveTo(width - margin, margin + 4 * margin);
-    context.lineTo(margin, margin + 6 * margin);
+    context.moveTo(width - margin, spacing * 3);
+    context.lineTo(margin, spacing * 4);
     context.stroke();
 
     context.beginPath();
-    context.moveTo(margin, margin + 6 * margin);
-    context.lineTo(width - margin, margin + 6 * margin);
+    context.moveTo(margin, spacing * 4);
+    context.lineTo(width - margin, spacing * 4);
     context.stroke();
 
     context.beginPath();
-    context.moveTo(width - margin, margin + 6 * margin);
-    context.lineTo(margin, margin + 8 * margin);
+    context.moveTo(width - margin, spacing * 4);
+    context.lineTo(margin, spacing * 5);
     context.stroke();
 
     context.beginPath();
-    context.moveTo(margin, margin + 8 * margin);
-    context.lineTo(width - margin, margin + 8 * margin);
+    context.moveTo(margin, spacing * 5);
+    context.lineTo(width - margin, spacing * 5);
     context.stroke();
 
     context.beginPath();
-    context.moveTo(width - margin, margin + 8 * margin);
-    context.lineTo(margin,margin);
+    context.moveTo(width - margin, spacing * 5);
+    context.lineTo(margin, spacing);
     context.stroke();
 }
