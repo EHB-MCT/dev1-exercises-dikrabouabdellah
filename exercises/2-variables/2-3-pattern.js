@@ -10,5 +10,14 @@ let height = context.canvas.height;
 
 
 
-context.fillStyle = color;
-context.fillRect(x,y,size,size);
+context.fillStyle = "#0096FF";
+context.fillRect(0, 0, width, height)
+
+context.fillStyle = "#36454F";
+context.fillRect(0, 0, width, (height /3) * 2)
+
+context.fillStyle = "#E5E4E2";
+context.fillRect(width /3, 0, width /3, height)
+
+context.fillStyle = "#EE4B2B";
+context.fillRect(0, height /5, width, height /3)
