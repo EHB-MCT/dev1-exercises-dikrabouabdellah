@@ -13,10 +13,12 @@ function draw() {
 }
 
 function drawDiagonalGrid() {
-    let i = ;
-    while (i <= ) {
-        Utils.drawLine(, , , );
-        Utils.drawLine(, , , );
-        i = ;
+    let i = 0;
+    while (i <= 6) {
+        let step = 200;
+        let offset = 50;
+        Utils.drawLine(offset + (i*25), step + (i*25), step + (i*25), offset + (i*25));
+        Utils.drawLine(step - (i*25), offset + (i*25), 350 - (i*25), step + (i*25));
+        i++;
     }
 }

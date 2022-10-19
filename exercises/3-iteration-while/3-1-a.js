@@ -14,7 +14,7 @@ function draw() {
 
 function drawLines() {
     let i = 0;
-    let margin = 75
+    let margin = 75;
     while (i<11) {
         //This drawLine function does not exist yet!
         //Add it to the utils script:

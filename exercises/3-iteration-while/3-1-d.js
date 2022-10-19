@@ -15,8 +15,8 @@ function draw() {
 function drawDiagonalLines() {
     let i = 0;
     while (i <= 6) {
-        let step = 200
-        let offset = 50
+        let step = 200;
+        let offset = 50;
         Utils.drawLine(offset + (i*25), step + (i*25), step + (i*25), offset + (i*25));
         i = i + 1;
     }
