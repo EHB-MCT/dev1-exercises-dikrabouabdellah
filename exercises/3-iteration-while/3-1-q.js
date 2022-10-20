@@ -13,11 +13,11 @@ function draw() {
 
 function drawGradientCircles() {
     let i = 0;
-    while () {
-        let gray = ;
+    while (i<6) {
+        let gray = i * 50;
         context.fillStyle = Utils.rgb(gray, gray, gray);
-        let radius = ;
-        Utils.fillAndStrokeCircle(200, 200, radius);
-        i++;;
+        let radius = 150;
+        Utils.fillAndStrokeCircle(200, 200, radius - (i * 25));
+        i++;
     }
 }
